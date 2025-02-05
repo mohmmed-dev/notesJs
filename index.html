@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="./css/scss/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Show The Notes -->
+      <div class="nodes">
+        <div class="control">
+          <div class="catch">
+            <!-- Add Notes -->
+            <div class="add_nodes">
+              <div class="form">
+                <input type="text" placeholder="Title" id="title" />
+                <textarea id="description" placeholder="Description"></textarea>
+                <ul id="colors">
+                  <li class="active" id="crit"></li>
+                  <li id="sign"></li>
+                  <li id="seco"></li>
+                  <li id="insi"></li>
+                </ul>
+                <input type="submit" value="Add Notes" id="add" />
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="plus" id="plus">
+              <img src="./icon/plus-solid.svg" alt="add_note" />
+            </button>
+            <button id="pen" class="pen">
+              <img src="./icon/pen-solid.svg" alt="edit_pen" class="pen" />
+            </button>
+            <button id="trash" class="delete">
+              <img
+                src="./icon/trash-solid.svg"
+                alt="delete-trash"
+                class="delete"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="order">
+          <div class="critcal"></div>
+          <div class="significant"></div>
+          <div class="secondary"></div>
+          <div class="insignificant"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

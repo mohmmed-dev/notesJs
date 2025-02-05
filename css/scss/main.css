@@ -1,0 +1,281 @@
+body .container .nodes .control .catch .add_nodes > .form, body .container .nodes .control .catch .add_nodes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .container .nodes .control .catch .add_nodes > .form > input[type=submit], body .container .nodes .control .catch .add_nodes > .form > textarea, body .container .nodes .control .catch .add_nodes > .form > input[type=text] {
+  display: block;
+  width: 100%;
+  padding: 10px 7px;
+  font-size: 18px;
+  border: 2px solid transparent;
+  transition: 0.5s all ease;
+}
+body .container .nodes .control .catch .add_nodes > .form > input[type=submit]:hover, body .container .nodes .control .catch .add_nodes > .form > textarea:hover, body .container .nodes .control .catch .add_nodes > .form > input[type=text]:hover, body .container .nodes .control .catch .add_nodes > .form > input[type=submit]:focus, body .container .nodes .control .catch .add_nodes > .form > textarea:focus, body .container .nodes .control .catch .add_nodes > .form > input[type=text]:focus {
+  outline: none;
+  border-color: #b6b6b6;
+}
+
+.critcal {
+  background-color: rgba(211, 47, 47, 0.6);
+}
+
+.significant {
+  background-color: rgba(48, 63, 159, 0.6);
+}
+
+.secondary {
+  background-color: rgba(56, 142, 60, 0.6);
+}
+
+.insignificant {
+  background-color: rgba(97, 97, 97, 0.6);
+}
+
+body .container .nodes .control .catch .add_nodes > .form > ul li {
+  width: 20px;
+  height: 20px;
+  margin: 3px 1px;
+  border-radius: 50%;
+  transition: 0.5s all ease;
+}
+body .container .nodes .control .catch .add_nodes > .form > ul li#crit {
+  background-color: #d32f2f;
+}
+body .container .nodes .control .catch .add_nodes > .form > ul li#sign {
+  background-color: #303f9f;
+}
+body .container .nodes .control .catch .add_nodes > .form > ul li#seco {
+  background-color: #388e3c;
+}
+body .container .nodes .control .catch .add_nodes > .form > ul li#insi {
+  background-color: #616161;
+}
+body .container .nodes .control .catch .add_nodes > .form > ul li:hover, body .container .nodes .control .catch .add_nodes > .form > ul li.active {
+  transform: scale(1.3);
+}
+
+body .container .nodes .order > div .note, body .container .nodes .control .catch .note {
+  min-width: 230px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.3);
+  text-align: start;
+  background-color: #fdd835;
+  overflow: hidden;
+  padding: 5px 8px;
+  transition: 0.5s all ease;
+}
+body .container .nodes .order > div .active.note, body .container .nodes .control .catch .active.note {
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1);
+}
+body .container .nodes .order > div .note h2, body .container .nodes .control .catch .note h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 5px 3px;
+  text-transform: capitalize;
+}
+body .container .nodes .order > div .note p, body .container .nodes .control .catch .note p {
+  margin: 5px 3px;
+  font-size: 15px;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #1b1b1b;
+}
+body .container {
+  margin-top: 25px;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  body .container {
+    flex-direction: column;
+  }
+}
+body .container .nodes {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 10px;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  body .container .nodes {
+    flex-direction: column;
+  }
+}
+body .container .nodes .control {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 0px 15px;
+}
+@media (max-width: 991px) {
+  body .container .nodes .control {
+    max-width: 100%;
+    margin: 0 20px;
+  }
+}
+body .container .nodes .control .catch {
+  margin: auto;
+  transition: 0.5s ease-in-out all;
+  width: 100%;
+}
+body .container .nodes .control .catch .add_nodes {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  transition: 0.5s ease-in-out all;
+}
+body .container .nodes .control .catch .add_nodes > .form {
+  flex-wrap: wrap;
+  position: relative;
+}
+body .container .nodes .control .catch .add_nodes > .form > input[type=text] {
+  font-size: 23px;
+}
+body .container .nodes .control .catch .add_nodes > .form > textarea {
+  border-top-color: #b6b6b6;
+  resize: none;
+  min-height: 300px;
+}
+body .container .nodes .control .catch .add_nodes > .form > ul {
+  position: absolute;
+  right: 20px;
+  bottom: 55px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .container .nodes .control .catch .add_nodes > .form > ul li {
+  display: inline-block;
+  cursor: pointer;
+}
+body .container .nodes .control .catch .add_nodes > .form > input[type=submit] {
+  cursor: pointer;
+}
+body .container .nodes .control .catch .note {
+  overflow: auto;
+  width: 70%;
+  margin: auto;
+  height: 100%;
+  max-height: 700px;
+  position: relative;
+}
+body .container .nodes .control .catch .note h2 {
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: auto;
+  font-size: 30px;
+}
+body .container .nodes .control .catch .note p {
+  margin-top: 10px;
+  font-size: 22px;
+}
+body .container .nodes .control .catch .note .X {
+  opacity: 0;
+}
+body .container .nodes .control .buttons {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+  pointer-events: none;
+}
+body .container .nodes .control .buttons.show {
+  pointer-events: auto;
+}
+body .container .nodes .control .buttons.show button:not(:first-child) {
+  opacity: 1;
+}
+body .container .nodes .control .buttons button {
+  margin: 5px;
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+body .container .nodes .control .buttons button#plus {
+  background-color: #00897b;
+}
+body .container .nodes .control .buttons button#pen {
+  background-color: #8e24aa;
+}
+body .container .nodes .control .buttons button#trash {
+  background-color: #d32f2f;
+}
+body .container .nodes .control .buttons button:not(:first-child) {
+  opacity: 0.7;
+}
+@media (max-width: 991px) {
+  body .container .nodes .control .buttons button {
+    width: 45px;
+    height: 45px;
+  }
+}
+body .container .nodes .control .buttons button img {
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 991px) {
+  body .container .nodes .control .buttons button img {
+    width: 15px;
+    height: 15px;
+  }
+}
+body .container .nodes .order {
+  flex: 1;
+  overflow: auto;
+  min-width: 50%;
+}
+@media (max-width: 991px) {
+  body .container .nodes .order {
+    min-width: 95%;
+    max-width: 95%;
+  }
+}
+body .container .nodes .order > div {
+  margin: 15px auto;
+  padding: 10px 5px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 10px;
+  border-radius: 6px;
+  box-shadow: inset 0px 0px 9px -2px rgba(255, 255, 255, 0.3);
+  width: 100%;
+  min-height: 270px;
+}
+@media (max-width: 991px) {
+  body .container .nodes .order > div {
+    min-height: 220px;
+  }
+  body .container .nodes .order > div::-webkit-scrollbar {
+    display: none;
+  }
+}
+body .container .nodes .order > div .note {
+  max-width: 230px;
+}
+@media (max-width: 991px) {
+  body .container .nodes .order > div .note {
+    min-width: 200px;
+    height: 200px;
+  }
+}/*# sourceMappingURL=main.css.map */
